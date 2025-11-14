@@ -10,6 +10,8 @@ public class Event {
     private LocalDateTime endTime;
     private int maxParticipants;
 
+    public Event(){}
+
     public Event(int eventID, String eventTitle, String eventDescription, LocalDateTime startTime, LocalDateTime endTime, int maxParticipants){
         this.eventID = eventID;
         this.eventTitle = eventTitle;

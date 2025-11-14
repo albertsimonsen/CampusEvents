@@ -20,7 +20,7 @@ public class HomeController {
     public String index (Model model){
         List<Event> eventList = eventService.fetchAllEvents();
         model.addAttribute("events", eventList);
-        return "home/index";
+        return "index";
 
 
     }

@@ -6,5 +6,24 @@
 </head>
 <body>
 
+
+
+<table>
+
+    <thead>  </thead>
+
+    <tbody>
+    <tr th:each="event : ${events}">
+        <td th:text="${event.eventID}"></td>
+        <td th:text="${event.eventTitle}"></td>
+        <td th:text="${event.eventDescription}"></td>
+        <td th:text="${event.startTime}"></td>
+        <td th:text="${event.endTime}"></td>
+        <td th:text="${event.maxParticipants}"></td>
+    </tr>
+    </tbody>
+
+</table>
+
 </body>
 </html>
